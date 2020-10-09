@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizza</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src=https://code.jquery.com/jquery-1.12.0.js></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+    
+        <nav class="navbar navbar-light" style="background-color: brown;">
+            <!-- Navbar content -->
+         
+        <ul class="nav nav-pills nav-justified" >
+            <li class="nav-item"><a class="nav-link" href="#Portofolio">Portofolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href=#menu>Menu</a></li>
+            <li class="nav-item ordering"><a class="nav-link" href=#pizzaOrders>Order Online</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+ 
+
+
+              <div class="row" id="pizzaOrders" style="margin-top: 5%; margin-left: -10%;"  >
+            
+            <div class="col-md-8">
+                <form id="new-pizza" style="margin-left: 50%;">
+                    <div class="form-group">
+                        <label for="new-first-name">First name</label>
+                        <input type="text" class="form-control" id="new-first-name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="new-last-name">Last name</label>
+                        <input type="text" class="form-control" id="new-last-name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="new-delivery">Delivery</label><!-- <label for="new-county">County</label> -->
+                        <select class="form-control new-delivery" required>
+                            <option>select </option>
+                            <option>yes</option>
+                            <option>no</option>
+                        </select>
+                    </div>
+
+                    <div id="new-orders">
+                        <div class="new-order">
+
+                            <div class="form-group">
+                                <label for="new-size">Size</label>
+                                <select class="form-control new-size">
+                                    <option value="" disabled selected>select size</option>
+                                    <option>small</option>
+                                    <option>medium</option>
+                                    <option>large</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="new-topping">topping</label>
+                                <select class="form-control new-topping">
+                                    <option value="" disabled selected>select topping</option>
+                                    <option>bacon</option>
+                                    <option>mushrooms</option>
+                                    <option>onions</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="new-crust">Crust</label>
+                                <select class="form-control new-crust">
+                                    <option value="" disabled selected>select crust</option>
+                                    <option>crispy</option>
+                                    <option>stuffed</option>
+                                    <option>gluten-free</option>
+                                </select>
+                            </div>
+
+                        </div>
+                
+                 
+
+                    <span class="btn btn-primary" id="add-order">Another order</span>
+
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+              </div>
+            </div>
+        
+                <h2 >Orders:</h2>
+                <ul id="orders" >
+
+                </ul>
+              
+            <div class="col-md-6" >
+                <div id="show-order" style="margin-left:140%; margin-top: -60%;">
+                    <h2></h2>
+                    <!-- <p>First name: <span class="first-name"></span></p>
+                    <p>Last name: <span class="last-name"></span></p> -->
+                    <p>Orders:</p>
+                    <ul id="names" ><p style="text-decoration: none">names</p></ul>
+                    <ul id="pizzass"><p style="text-decoration: none">Orders</p></ul>
+                    <ul id="deliver"> <p style="text-decoration: none">delivery?</p> </ul>
+                    <ul id="deliverCharge"> <p style="text-decoration: none">delivery charge is: </p> </ul>
+                </div>
+            </div>
+
+  
+
+ 
+    <!-- <button type="submit" id="orderBtn" class="btn btn-primary" style="margin-left: 42%;">Order Online</button> -->
+    <!-- <i class="em em-writing_hand"></i> -->
+    <div class="row" id="description" > 
+        <div id="Portofolio" style="margin-top: 20%; margin-left:-40%; justify-content: space-around;">
+            <h3 style="font-weight: bold">Portofolio</h3>
+            <img src="https://www.italiarail.com/sites/default/files/2020-01/pizza_napolitana1_Fotor.jpg" width="100px",height="100px">
+            <img src="https://storage.googleapis.com/phx2-uat-wordpress-uploads/1/2019/12/Fan-Favourite-640x390.jpg" width="100px",height="100px">
+            <img src="https://mmsdragon.org/wp-content/uploads/2017/11/pizza.jpg" width="100px",height="100px">
+        </div>
+        <div id="contact"style="margin-top: 20%; margin-left:20%;">
+            <h3 style="font-weight: bold">Contact Info</h3>
+            <p>The Best Pizzaria</p>
+            <p>Phone: +250 78  583 22 48</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

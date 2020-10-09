@@ -1,0 +1,11 @@
+body{
+	background-color:maroon;
+	color: white;
+}
+nav > ul>li>a:hover{
+	background-color: rebeccapurple;
+	color: black;
+}
+	nav>ul>li>a{
+color: seashell;
+	}
